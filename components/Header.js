@@ -2,8 +2,12 @@ import React, { useState } from "react";
 import { StyleSheet, TouchableWithoutFeedback, Text, View, ScrollView, Image, TouchableHighlight } from "react-native";
 import { Card } from "react-native-elements";
 import Icon from 'react-native-ionicons';
+import { useNavigation } from '@react-navigation/native';
+
 
 const Header = () => {
+    const navigation = useNavigation();
+
     return (
         <View>
             <View style={styles.headerButtons}>
@@ -27,7 +31,7 @@ const Header = () => {
             </View>
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                 <View>
-                    <TouchableWithoutFeedback>
+                    <TouchableWithoutFeedback onPress={() => navigation.navigate('Category')}>
                         <View style={styles.categoryDiv}>
                             <Image source={require('../assets/img/deals.png')} style={styles.categoryIcon} />
                             <Text style={styles.categoryText}>Offres</Text>
@@ -35,7 +39,7 @@ const Header = () => {
                     </TouchableWithoutFeedback>
                 </View>
                 <View>
-                    <TouchableWithoutFeedback>
+                    <TouchableWithoutFeedback onPress={() => navigation.navigate('Category')}>
                         <View style={styles.categoryDiv}>
                             <Image source={require('../assets/img/uber_grocery.png')} style={styles.categoryIcon} />
                             <Text style={styles.categoryText}>Courses</Text>
@@ -43,7 +47,7 @@ const Header = () => {
                     </TouchableWithoutFeedback>
                 </View>
                 <View>
-                    <TouchableWithoutFeedback>
+                    <TouchableWithoutFeedback onPress={() => navigation.navigate('Category')}>
                         <View style={styles.categoryDiv}>
                             <Image source={require('../assets/img/convenience.png')} style={styles.categoryIcon} />
                             <Text style={styles.categoryText}>Épicerie</Text>
@@ -51,7 +55,7 @@ const Header = () => {
                     </TouchableWithoutFeedback>
                 </View>
                 <View>
-                    <TouchableWithoutFeedback>
+                    <TouchableWithoutFeedback onPress={() => navigation.navigate('Category')}>
                         <View style={styles.categoryDiv}>
                             <Image source={require('../assets/img/alcohol.png')} style={styles.categoryIcon} />
                             <Text style={styles.categoryText}>Alcool</Text>
@@ -59,7 +63,7 @@ const Header = () => {
                     </TouchableWithoutFeedback>
                 </View>
                 <View>
-                    <TouchableWithoutFeedback>
+                    <TouchableWithoutFeedback onPress={() => navigation.navigate('Category')}>
                         <View style={styles.categoryDiv}>
                             <Image source={require('../assets/img/beauty.png')} style={styles.categoryIcon} />
                             <Text style={styles.categoryText}>Hygiène</Text>

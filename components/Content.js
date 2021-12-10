@@ -5,7 +5,7 @@ import Restaurant from "./Restaurant";
 const Content = () => {
     return(
         <ScrollView style={styles.container} onScroll={this.handleScroll}>
-            <Restaurant />
+            <Restaurant  />
             <Restaurant />
             <Restaurant />
             <Restaurant />
