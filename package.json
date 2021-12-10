@@ -10,8 +10,12 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "lottie-react-native": "^5.0.1",
     "react": "17.0.2",
-    "react-native": "0.66.4"
+    "react-native": "0.66.4",
+    "react-native-elements": "^3.4.2",
+    "react-native-ionicons": "^4.6.5",
+    "react-native-shared-element": "^0.8.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
