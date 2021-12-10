@@ -13,6 +13,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		BE53BB20AC27312C718411C8 /* libPods-UberEats.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB80A5159EBDE8BA1339DA31 /* libPods-UberEats.a */; };
+		C6F414792763857B00D445D1 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = C6F414782763857B00D445D1 /* Fonts */; };
 		E8CEED6794F49ADED5BBE621 /* libPods-UberEats-UberEatsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D67592D5EE82CCE1023F1A80 /* libPods-UberEats-UberEatsTests.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		550278A80D4F78A60AD0832A /* Pods-UberEats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberEats.release.xcconfig"; path = "Target Support Files/Pods-UberEats/Pods-UberEats.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = UberEats/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B688CB30E03F26A919623630 /* Pods-UberEats-UberEatsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberEats-UberEatsTests.debug.xcconfig"; path = "Target Support Files/Pods-UberEats-UberEatsTests/Pods-UberEats-UberEatsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C6F414782763857B00D445D1 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = UberEats/Fonts; sourceTree = "<group>"; };
 		D67592D5EE82CCE1023F1A80 /* libPods-UberEats-UberEatsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UberEats-UberEatsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB80A5159EBDE8BA1339DA31 /* libPods-UberEats.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UberEats.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -86,6 +88,7 @@
 		13B07FAE1A68108700A75B9A /* UberEats */ = {
 			isa = PBXGroup;
 			children = (
+				C6F414782763857B00D445D1 /* Fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -114,7 +117,6 @@
 				B688CB30E03F26A919623630 /* Pods-UberEats-UberEatsTests.debug.xcconfig */,
 				152D63F70D8A09DBE0D99BAF /* Pods-UberEats-UberEatsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -243,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6F414792763857B00D445D1 /* Fonts in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
