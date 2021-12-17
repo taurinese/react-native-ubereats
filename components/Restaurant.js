@@ -2,18 +2,22 @@ import React, { useState } from "react";
 import { StyleSheet, TouchableWithoutFeedback, Text, View, ScrollView, Image, TouchableHighlight } from "react-native";
 import { useNavigation } from '@react-navigation/native';
 
-const Restaurant = () => {
+const Restaurant = (props) => {
     const navigation = useNavigation();
 
     return (
-        <TouchableWithoutFeedback onPress={() => navigation.navigate('Details')}>
+        <TouchableWithoutFeedback onPress={() => navigation.navigate('Details', {
+            banner: props.banner,
+            name: props.name,
+            product: props.product
+        })}>
             <View style={styles.container}>
-                <Image style={styles.image} source={require("../assets/img/restaurants/mcdo.jpeg")} />
-                <Text style={styles.name}>McDonald's® (Paris République)</Text>
+                <Image style={styles.image} source={props.image} />
+                <Text style={styles.name}>{props.name}</Text>
                 <View style={styles.details}>
                     <Image style={styles.ticket} source={require("../assets/img/restaurants/ticket.png")} />
-                    <Text style={styles.frais}> Frais de livraison : 0,49€ • </Text>
-                    <Text style={styles.time}>15-25 min</Text>
+                    <Text style={styles.frais}> Frais de livraison : {props.fee}€ • </Text>
+                    <Text style={styles.time}>{props.deliveryTime} min</Text>
                 </View>
             </View>
         </TouchableWithoutFeedback>

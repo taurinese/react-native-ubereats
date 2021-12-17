@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, setState } from "react";
 import { StyleSheet, TouchableWithoutFeedback, Text, View, ScrollView, Image, TouchableHighlight } from "react-native";
 import { Card } from "react-native-elements";
 import Icon from 'react-native-ionicons';
@@ -7,18 +7,19 @@ import { useNavigation } from '@react-navigation/native';
 
 const Header = () => {
     const navigation = useNavigation();
+    const [deliveryMode, setDeliveryMode] = useState("delivery");
 
     return (
         <View>
             <View style={styles.headerButtons}>
-                <TouchableWithoutFeedback>
-                    <View style={styles.headerBtnActive}>
-                        <Text style={{color: "#FFF"}}>Livraison</Text>
+                <TouchableWithoutFeedback onPress={() => setDeliveryMode("delivery")}>
+                    <View style={deliveryMode == "delivery" ? styles.headerBtnActive : styles.headerBtnInactive}>
+                        <Text style={deliveryMode == "delivery" ? {color: "#FFF"}: {color: "#000"}}>Livraison</Text>
                     </View>
                 </TouchableWithoutFeedback>
-                <TouchableWithoutFeedback>
-                    <View style={styles.headerBtnInactive}>
-                        <Text>À emporter</Text>
+                <TouchableWithoutFeedback onPress={() => setDeliveryMode("takeAway")}>
+                    <View style={deliveryMode == "takeAway" ? styles.headerBtnActive : styles.headerBtnInactive}>
+                        <Text style={deliveryMode == "takeAway" ? {color: "#FFF"} : {color: "#000"}}>À emporter</Text>
                     </View>
                 </TouchableWithoutFeedback>
             </View>
