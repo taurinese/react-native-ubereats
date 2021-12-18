@@ -24,6 +24,8 @@ export default class SearchScreen extends React.Component {
                 value={search}
                 platform="ios"
                 containerStyle={styles.containerSearchBar}
+                cancelButtonTitle=""
+                cancelButtonProps={{disabled: "disabled"}}
                 />
                 <LottieView style={search != ""? {display:"flex"}: {display: "none"}} source={require('../assets/animations/loading.json')} autoPlay loop />
                 <ScrollView style={search != ""? {display:"none"}: {display: "flex"}}>
